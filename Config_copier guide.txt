@@ -1,0 +1,27 @@
+The source directories and files are specified using UNC paths (i.e., paths in the format //server/share/path/to/file), 
+which allow you to access shared network folders and files edit the Config_copier and replace the source_dirs and source_files with your 
+choice of directories and files paths
+
+
+To use this script when copying to or from local machine, use the format (Drive):/path/to/source/directory example (C:/test/testdocument2.txt) Also need to put file extension
+after file name just replace paths to your source and destination directories, respectively.
+
+
+when adding to the list make sure it is in the format:
+
+{
+        'path': r"//server/share/path/to/source/directory1",
+        'destination': r"C:/path/to/destination/directory1"
+    },
+    {
+        'path': r"//server/share/path/to/source/directory2",
+        'destination': r"C:/path/to/destination/directory2"
+    },
+    {
+        'path': r"//server/share/path/to/source/file1.ext",
+        'destination': r"C:/path/to/destination/directory1"
+    },
+    {
+        'path': r"//server/share/path/to/source/file2.ext",
+        'destination': r"C:/path/to/destination/directory2"
+    }
