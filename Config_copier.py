@@ -25,7 +25,7 @@ source_items = [
 
 for item in source_items:
     item_name = os.path.basename(item['path'])
-    print(f"\033[32m{item_name}\033[0m -> \033[32m{item['destination']}\033[0m")
+    print(f"\033[32m{item_name}\033[0m ----> \033[32m{item['destination']}\033[0m")
 
 overwrite_all = False
 for item in source_items:
@@ -83,3 +83,4 @@ while timer > 0:
     print(f"\033[31mClosing in {timer} seconds...\033[0m")
     time.sleep(1)
     timer -= 1
+
