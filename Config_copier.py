@@ -11,15 +11,15 @@ source_items = [
     },
     {
         'path': "C:/test/testdocument2.txt",
-        'destination': "C:/test3"
+        'destination': "C:/test folder"
     },
     {
-        'path': "//server/share/path/to/source/file1.ext",
-        'destination': "C:/path/to/destination/directory1"
+        'path': "//server/share/path/to/source/file 1.ext",
+        'destination': "C:/path/to/destination/directory 1"
     },
     {
-        'path': "//server/share/path/to/source/file2.ext",
-        'destination': "C:/path/to/destination/directory2"
+        'path': "//server/share/path/to/source/file 2.ext",
+        'destination': "C:/path/to/destination/directory 2"
     }
 ]
 
@@ -83,4 +83,3 @@ while timer > 0:
     print(f"\033[31mClosing in {timer} seconds...\033[0m")
     time.sleep(1)
     timer -= 1
-
